@@ -1,0 +1,6 @@
+.idea
+target
+*.iml
+classes
+test.sh
+Test.java
