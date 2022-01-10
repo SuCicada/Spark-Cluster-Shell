@@ -240,7 +240,7 @@ class SparkRealThread(args: Array[String], sparkSubmitMode: String) extends Thre
         //        }
         while (input.hasNext) {
             val s = input.next()
-            if (!s.matches(".*INFO yarn.Client: Application report for application.* \\(state: RUNNING\\)")) {
+            if (!s.matches(".* Application report for application.* \\(state: RUNNING\\)")) {
                 println(s)
             }
         }
